@@ -1,39 +1,25 @@
-# 实习
+XGB_ST：
+项目描述：基于Xgboost对St股票进行预测
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+1.1 XGBOOST预测ST股票.pptx：本项目的ppt解释说明
 
-#### 软件架构
-软件架构说明
+1.2 Model.py：用于训练模型的程序
 
+1.3 Predict.py：用于预测的程序
 
-#### 安装教程
+1.4 Connect.py：用于将预测后结果和当月真实st事件做连接的程序
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.5 Calculate.py：用于计算预测出的正例下个月走势的程序
 
-#### 使用说明
+1.6 Data：存储原数据的文件夹
+1.6.1 2024_4_True_St.xlsx：2024年四月真实可预测st事件
+1.6.2 2024_5_True_St.xlsx：2024年五月真实可预测st事件
+1.6.3 All-2024-3mbefore.xlsx：用来训练的数据
+1.6.4 close1-4.csv：用来存储A股股票收盘价的文件
+1.6.5 2023_2-2024_7.xlsx：用来预测的各月数据
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.7 Result
+1.7.1 Sorted_Predictions23_2-24_7.xlsx：按概率排序的预测结果
+1.7.2 Predict24_4-5.xlsx：仅含有当月真实的st事件及其概率s
+1.7.3 Updated_Predictions_23_2-24_7.xlsx:预测为正例的下个月总收益率
+1.7.4 xgb_model.pkl：训练出的模型
